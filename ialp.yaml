@@ -1,0 +1,35 @@
+# install with conda env create -f ialp.yaml
+
+name: ialp
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9  # specify Python version
+  - ipykernel
+  - pandas>=1.2.0,<2.0  # Ensure pandas version compatibility
+  - matplotlib>=3.2,<4.0  # Specify a range for matplotlib to avoid conflicts
+  - seaborn
+  - nbformat
+  - plotly
+  - scikit-learn>=0.24  # Specify version of scikit-learn for compatibility
+  - black
+  - flake8
+  - statsmodels
+  - yfinance
+  - geopandas>=0.10
+  - osmnx>=1.0
+  - pykrige
+  - pyod
+  - pytorch
+  - keplergl
+  - lightgbm
+  - prophet
+  - sktime>=0.7  # Specific version of sktime to ensure compatibility with other packages
+  - pip
+  - pip:
+    - torch-summary
+    - otter-grader
+    - cryptocompare
+    - xlrd
